@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebRTC Demo</title>
+    <!-- Include Socket.IO client library -->
+    <script src="/socket.io/socket.io.js"></script>
+    <style>
+        video {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 10px;
+        }
+        button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WebRTC Demo</h1>
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+    <br>
+    <button id="startButton">Start Call</button>
+    <button id="hangupButton">Hang Up</button>
+
+    <!-- Client-side script -->
+    <script src="client.js"></script>
+</body>
+</html>
